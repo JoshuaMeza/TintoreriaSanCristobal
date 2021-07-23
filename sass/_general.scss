@@ -1,0 +1,56 @@
+/* Base style document */
+/* Imports */
+@import "./variables";
+@import "./components";
+@import "./animations";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+/* Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  color: $font-black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crimson Text", serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.reduced-block {
+  width: 60vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.showing {
+  animation: fadeUp 1s 0.1s ease-out forwards;
+}
+
+/* General adaptations */
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: $tablet) {
+  .reduced-block {
+    width: 70vw;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: $phone) {
+  .reduced-block {
+    width: 80vw;
+  }
+}

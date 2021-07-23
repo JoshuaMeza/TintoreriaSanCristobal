@@ -1,0 +1,11 @@
+/* General Bootstrap elements customization */
+/* Navbar brand */
+.navbar .navbar-brand img {
+  max-width: 4vw;
+  max-height: 4vw;
+  min-width: 30px;
+  min-height: 30px;
+  width: 4vh;
+  height: 4vh;
+}
+/*# sourceMappingURL=custom.css.map */

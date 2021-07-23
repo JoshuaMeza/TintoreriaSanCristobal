@@ -1,0 +1,24 @@
+@import "./variables";
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: $xlDesktop) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: $desktops) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: $tablet) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: $phone) {
+  .about {
+    margin-top: 3vh;
+    img {
+      max-width: 100%;
+      margin: 1.5vh 0 2.5vh 0;
+    }
+  }
+}
