@@ -1,8 +1,6 @@
 /* Base style document */
 /* Imports */
-@import "./variables";
-@import "./components";
-@import "./animations";
+@import "./variables", "./components", "./animations";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 
@@ -29,7 +27,10 @@ a {
 .reduced-block {
   width: 60vw;
   margin: auto;
-  overflow: hidden;
+
+  .main-title {
+    margin-bottom: 2vh;
+  }
 }
 
 .reveal {
@@ -37,7 +38,24 @@ a {
 }
 
 .showing {
-  animation: fadeUp 1s 0.1s ease-out forwards;
+  @include fadeAppear(1s, 0.1s, 2vh);
+}
+
+.line {
+  width: 90vw;
+  height: 0.08rem;
+  margin: 2.5vh auto;
+  background-color: $line-gray;
+}
+
+.map {
+  border: 0;
+  width: 100%;
+  height: 70vh;
+}
+
+.page {
+  display: none;
 }
 
 /* General adaptations */
@@ -52,5 +70,9 @@ a {
 @media (max-width: $phone) {
   .reduced-block {
     width: 80vw;
+  }
+
+  .map {
+    height: 50vh;
   }
 }

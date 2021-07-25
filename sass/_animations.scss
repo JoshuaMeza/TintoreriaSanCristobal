@@ -1,23 +1,47 @@
 /* Animations */
-@keyframes fadeUp {
-  from {
-    transform: translate(0, 2vh);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
+@mixin fadeAppear($duration: 1s, $delay: 0s, $distance: 2vh) {
+  transform: translate(0, $distance);
+  opacity: 0;
+  animation: fadeUp $duration $delay ease-out forwards;
+
+  @keyframes fadeUp {
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
   }
 }
 
-@keyframes scrollUp {
-  to {
-    transform: translate(0, 0);
+@mixin scrollingUp($duration: 0.8s, $delay: 0s, $distance: 90vh) {
+  transform: translate(0, $distance);
+  animation: scrollUp $duration $delay ease-out forwards;
+
+  @keyframes scrollUp {
+    to {
+      transform: translate(0, 0);
+    }
   }
 }
 
-@keyframes scaleUp {
-  to {
-    transform: scaleX(1);
+@mixin scalingUp($duration: 1s) {
+  overflow: hidden;
+  transform: scaleX(0);
+  animation: scaleUp $duration ease-out forwards;
+
+  @keyframes scaleUp {
+    to {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@mixin moveUp($duration: 0.5s) {
+  transition: $duration ease-out;
+
+  &:hover {
+    transform: translate(0, -1vh);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: $border-radius;
+    z-index: 1;
   }
 }

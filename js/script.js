@@ -1,3 +1,10 @@
+/* Loader */
+$(window).on("load", function () {
+  $("#onload").fadeOut("slow");
+  $(".page").show();
+});
+
+/* Display */
 window.addEventListener("scroll", reveal);
 
 function reveal() {

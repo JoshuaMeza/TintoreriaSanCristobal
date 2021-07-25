@@ -14,11 +14,39 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: $phone) {
+  /* About */
   .about {
-    margin-top: 3vh;
-    img {
-      max-width: 100%;
-      margin: 1.5vh 0 2.5vh 0;
+    .content {
+      width: 100%;
+
+      img {
+        max-width: 80vw;
+        margin-bottom: 2.5vh;
+      }
+    }
+  }
+
+  /* Services */
+  .services {
+    .ser-box {
+      .box {
+        width: 80vw;
+        min-height: 30vh;
+
+        img {
+          width: 30vw;
+          height: 30vw;
+        }
+      }
+
+      .to-swapp {
+        flex-direction: row-reverse !important;
+
+        img {
+          margin-right: 0;
+          margin-left: 2vw;
+        }
+      }
     }
   }
 }
