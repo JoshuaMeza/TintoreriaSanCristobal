@@ -4,6 +4,11 @@ $(window).on("load", function () {
   $(".page").show();
 });
 
+/* Carousel */
+$(".carousel").carousel({
+  interval: 4000,
+});
+
 /* Display */
 window.addEventListener("scroll", reveal);
 

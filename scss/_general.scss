@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .reduced-block {
   width: 60vw;
   margin: auto;
@@ -44,18 +48,32 @@ a {
 .line {
   width: 90vw;
   height: 0.08rem;
-  margin: 2.5vh auto;
+  margin: 4vh auto 2.5vh auto;
   background-color: $line-gray;
-}
-
-.map {
-  border: 0;
-  width: 100%;
-  height: 70vh;
 }
 
 .page {
   display: none;
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 2vh;
+
+  .icons {
+    @include flex-center(row);
+
+    .icon {
+      text-decoration: none;
+      color: $font-white;
+      font-size: 2rem;
+      margin: 0 1rem;
+
+      i {
+        @include danceGrow(0.85s);
+      }
+    }
+  }
 }
 
 /* General adaptations */
@@ -70,9 +88,5 @@ a {
 @media (max-width: $phone) {
   .reduced-block {
     width: 80vw;
-  }
-
-  .map {
-    height: 50vh;
   }
 }

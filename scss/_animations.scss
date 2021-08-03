@@ -45,3 +45,27 @@
     z-index: 1;
   }
 }
+
+@mixin danceGrow($duration: 0.8s) {
+  &:hover {
+    animation: moving $duration;
+  }
+
+  @keyframes moving {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    25% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(0) scale(1.1);
+    }
+    75% {
+      transform: rotate(-9deg);
+    }
+    100% {
+      transform: rotate(0) scale(1);
+    }
+  }
+}

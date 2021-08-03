@@ -2,8 +2,10 @@
 
 /* Styles */
 .loader {
-  @include flex-center(column);
+  font-family: serif;
   color: $font-white;
+
+  @include flex-center(column);
   width: 100vw;
   height: 100vh;
   z-index: 999;

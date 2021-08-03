@@ -14,9 +14,8 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: $phone) {
-  /* About */
   .about {
-    .content {
+    .ab-content {
       width: 100%;
 
       img {
@@ -26,7 +25,6 @@
     }
   }
 
-  /* Services */
   .services {
     .ser-box {
       .box {
@@ -48,5 +46,32 @@
         }
       }
     }
+  }
+
+  .schedule {
+    .sch-content {
+      width: 100%;
+
+      img {
+        max-width: 80vw;
+        margin-bottom: 2.5vh;
+      }
+
+      .sch-text {
+        width: 100%;
+      }
+    }
+  }
+
+  .gallery {
+    .gall-content {
+      width: 100%;
+      height: 80vw;
+      max-height: 30vh;
+    }
+  }
+
+  .map {
+    height: 50vh;
   }
 }
