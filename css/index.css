@@ -33,6 +33,10 @@ p {
   margin: 0;
 }
 
+.page {
+  display: none;
+}
+
 .reduced-block {
   width: 60vw;
   margin: auto;
@@ -75,10 +79,6 @@ p {
   height: 0.08rem;
   margin: 4vh auto 2.5vh auto;
   background-color: #d8d8d8;
-}
-
-.page {
-  display: none;
 }
 
 footer {

@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
@@ -36,7 +37,7 @@
   <body>
     <!-- Loader -->
     <div id="onload" class="loader bg-dark">
-      <h2><strong>¡Bienvenido(a)!</strong></h2>
+      <h2><strong>Cargando</strong></h2>
       <div class="lds-ellipsis">
         <div></div>
         <div></div>
@@ -78,10 +79,14 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Nosotros </a>
+              <a class="nav-link" href="./templates/es/about_us.html">
+                Nosotros
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Contacto </a>
+              <a class="nav-link" href="./templates/es/contact.html">
+                Contacto
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -96,13 +101,21 @@
                 Servicios
               </a>
               <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                <a class="dropdown-item" href="#">Tintorería</a>
-                <a class="dropdown-item" href="#">Lavandería</a>
-                <a class="dropdown-item" href="#">Servicio a domicilio</a>
+                <a class="dropdown-item" href="./templates/es/dry_cleaner.html"
+                  >Tintorería</a
+                >
+                <a class="dropdown-item" href="./templates/es/laundry.html"
+                  >Lavandería</a
+                >
+                <a class="dropdown-item" href="./templates/es/delivery.html"
+                  >Servicio a domicilio</a
+                >
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Preguntas Frecuentes </a>
+              <a class="nav-link" href="./templates/es/FAQ.html">
+                Preguntas Frecuentes
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -120,10 +133,12 @@
                 class="dropdown-menu dropdown-menu-right"
                 aria-labelledby="languageDropdown"
               >
+                <!-- Current Spanish -->
                 <a class="dropdown-item active" href="./index.html">
                   <img src="https://www.countryflags.io/mx/flat/16.png" />
                   Español
                 </a>
+                <!-- Current English -->
                 <a class="dropdown-item" href="#">
                   <img src="https://www.countryflags.io/us/flat/16.png" />
                   Inglés
@@ -203,12 +218,8 @@
                 <p>La mejor opción si tu problema son unas cuantas arrugas.</p>
               </div>
             </div>
-            <div class="box">
-              <img
-                src="./img/content/tempbox.png"
-                alt="Tintado"
-                class="shadow"
-              />
+            <div class="box to-swapp">
+              <img src="./img/content/paint.png" alt="Tintado" class="shadow" />
               <div class="text">
                 <h4>Tintado</h4>
                 <p>
@@ -217,7 +228,7 @@
                 </p>
               </div>
             </div>
-            <div class="box to-swapp">
+            <div class="box">
               <img
                 src="./img/content/delivery.png"
                 alt="Servicio a domicilio"

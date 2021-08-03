@@ -1,5 +1,5 @@
 # Tintorería San Cristóbal
 
-## Contributors
+## Author
 
 - Joshua Immanuel Meza Magaña

@@ -1,0 +1,182 @@
+/* Contact style */
+/* Imports */
+/* Base style document */
+/* Imports */
+/* Variables */
+/* Components */
+/* Animations */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+/* Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #0a0e1a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crimson Text", serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.page {
+  display: none;
+}
+
+.reduced-block {
+  width: 60vw;
+  margin: auto;
+}
+
+.reduced-block .main-title {
+  margin-bottom: 2vh;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.showing {
+  -webkit-transform: translate(0, 2vh);
+          transform: translate(0, 2vh);
+  opacity: 0;
+  -webkit-animation: fadeUp 1s 0.1s ease-out forwards;
+          animation: fadeUp 1s 0.1s ease-out forwards;
+}
+
+@-webkit-keyframes fadeUp {
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.line {
+  width: 90vw;
+  height: 0.08rem;
+  margin: 4vh auto 2.5vh auto;
+  background-color: #d8d8d8;
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 2vh;
+}
+
+footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .icons .icon {
+  text-decoration: none;
+  color: #f7fff7;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+footer .icons .icon i:hover {
+  -webkit-animation: moving 0.85s;
+          animation: moving 0.85s;
+}
+
+@-webkit-keyframes moving {
+  0% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+  }
+  25% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1.1);
+            transform: rotate(0) scale(1.1);
+  }
+  75% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+  }
+  25% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1.1);
+            transform: rotate(0) scale(1.1);
+  }
+  75% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+  }
+}
+
+/* General adaptations */
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .reduced-block {
+    width: 70vw;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .reduced-block {
+    width: 80vw;
+  }
+}
+
+/* Media Queries */
+/* Variables */
+/* Extra large devices (large desktops, 1200px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Small devices (landscape phones, 576px and up) */
+/*# sourceMappingURL=laundry.css.map */
