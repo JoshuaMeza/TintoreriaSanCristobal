@@ -14,6 +14,7 @@ window.addEventListener("scroll", reveal);
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
+  var finished = true;
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
@@ -22,6 +23,16 @@ function reveal() {
 
     if (windowHeight > revealTop + revealPoint / 3) {
       reveals[i].classList.add("showing");
+    } else {
+      finished = false;
     }
   }
+
+  if (reveals.length == 0 || finished) {
+    removeListener();
+  }
+}
+
+function removeListener() {
+  window.removeEventListener("scroll", reveal);
 }

@@ -2,5 +2,19 @@
 /* Imports */
 @import "./global/general";
 
+h1 {
+  margin-top: 10vh;
+}
+
+/* Founder */
+.video {
+  width: 60%;
+  height: 40vh;
+  max-height: 600px;
+
+  border: none;
+  overflow: hidden;
+}
+
 /* Media Queries */
 @import "./about_us-m";
