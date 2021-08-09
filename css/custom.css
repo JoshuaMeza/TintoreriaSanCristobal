@@ -1,10 +1,5 @@
 /* General Bootstrap elements customization */
 /* Navbar brand */
-.navbar {
-  height: 8vh;
-  min-height: 10px;
-}
-
 .navbar .navbar-brand img {
   max-width: 4vw;
   max-height: 4vw;
